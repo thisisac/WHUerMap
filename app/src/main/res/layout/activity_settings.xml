@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户偏好配置"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入您的身高 (cm) - 用于计算导航步数:" />
+    <EditText
+        android:id="@+id/et_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="例如: 175" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS定位更新频率 (毫秒):"
+        android:layout_marginTop="15dp"/>
+    <EditText
+        android:id="@+id/et_gps_freq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="例如: 5000" />
+
+    <Switch
+        android:id="@+id/switch_nav_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开启详细文字导航播报 (BottomSheet)"
+        android:layout_marginTop="20dp"
+        android:checked="true"/>
+
+    <Button
+        android:id="@+id/btn_save_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存并返回"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#1A73E8"/>
+</LinearLayout>

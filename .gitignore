@@ -1,0 +1,21 @@
+# Android/Gradle build output
+.gradle/
+build/
+*/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Android Studio / local machine files
+.idea/
+*.iml
+local.properties
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+*.swp
+
+# Generated reports
+reports/
+
